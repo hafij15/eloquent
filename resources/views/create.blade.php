@@ -1,4 +1,7 @@
 @extends('master')
+@section('title')
+	Create Student | Student Management
+@endsection
 @section('content')
 	<h2>Create new student</h2>
 	<form class="form-horizontal" action="{{route('store')}}" method="post">

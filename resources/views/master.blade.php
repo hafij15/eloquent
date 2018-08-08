@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>@yield('title','Student Management')</title>
 	<link rel="stylesheet" type="text/css" href="{{asset('public/bootstrap/dist/css/bootstrap.min.css')}}">
 </head>
 <body>
 	<div class="container">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">Student Management</a>
+	  <a class="navbar-brand" href="{{route('index')}}">Student Management</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -15,6 +15,9 @@
 	    <ul class="navbar-nav">	      
 	      <li class="nav-item">
 	        <a class="nav-link" href="{{ route('newStudent') }}">Create Student</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="{{ route('post.index') }}">All post</a>
 	      </li>
 	      <!-- <li class="nav-item dropdown">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

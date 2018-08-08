@@ -18,3 +18,8 @@
 Route::get('/','StudentController@index')->name('index');
 Route::get('/create','StudentController@createStudent')->name('newStudent');
 Route::post('/store','StudentController@storeStudent')->name('store');
+Route::get('/edit/{id}','StudentController@editStudent')->name('edit');
+Route::post('/update/{id}','StudentController@updateStudent')->name('update');
+Route::get('/delete/{id}','StudentController@deleteStudent')->name('delete');
+Route::get('/post','PostController@index')->name('post.index');
+
